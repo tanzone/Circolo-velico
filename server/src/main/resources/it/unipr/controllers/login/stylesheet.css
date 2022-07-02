@@ -1,0 +1,35 @@
+.linear-grad
+{
+	-fx-background-color: linear-gradient(to bottom left, #2F2B43, #393351);
+}
+
+.start
+{
+	-fx-background-color: #FA2C56;
+	-fx-background-radius: 6;
+	-fx-border-radius: 5;
+	-fx-text-fill: black;
+}
+.start: hover
+{
+	-fx-border-color: #fff;
+}
+.start: pressed
+{
+    -fx-background-color: #FB5173;
+	-fx-text-fill: #2F2B43;
+}
+.close: hover
+{
+	-fx-fill: #fdb6b4;
+}
+
+.minimaze: hover
+{
+	-fx-fill: #fdce68;
+}
+
+.maximaze: hover
+{
+	-fx-fill: #6ae27e;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" onMouseClicked="#click" styleClass="boatPane"
+            stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/17"
+            fx:controller="it.unipr.controllers.dashboard.AddBoatController">
+    <children>
+        <Pane>
+            <children>
+                <HBox>
+                    <children>
+                        <ImageView fx:id="imgBoat" fitHeight="139.0" fitWidth="142.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@plus.png"/>
+                            </image>
+                            <HBox.margin>
+                                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0"/>
+                            </HBox.margin>
+                        </ImageView>
+                    </children>
+                </HBox>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+.linear-grad
+{
+	-fx-background-color: linear-gradient(to bottom left, #2F2B43, #393351);
+}
+
+.signIn
+{
+	-fx-background-color: #FA2C56;
+	-fx-text-fill: #000000;
+}
+.signIn: hover
+{
+	-fx-text-fill: #ffffff;
+}
+.signIn: pressed
+{
+    -fx-background-color: #FB5173;
+	-fx-text-fill: #2F2B43;
+}
+.signIn: active
+{
+	-fx-text-fill: #80AFF5;
+}
+
+.signUp
+{
+	-fx-background-color:  #D5CBEB;
+	-fx-background-radius: 5;
+	-fx-border-color: #6f4CBB;
+	-fx-border-radius: 5;
+	-fx-text-fill: #371897;
+}
+.signUp: hover
+{
+	-fx-background-color:  #E4EEFD;
+}
+.signUp: pressed
+{
+	-fx-text-fill: #371897;
+}
+.signUp: active
+{
+	-fx-text-fill: #80AFF5;
+}
+
+
+.left
+{
+	-fx-background-color: transparent;
+	-fx-background-radius: 500;
+}
+.left: hover
+{
+	-fx-background-color: #f2f2f2;
+}
+
+
+.close: hover
+{
+	-fx-fill: #fdb6b4;
+}
+
+.minimaze: hover
+{
+	-fx-fill: #fdce68;
+}
+
+.maximaze: hover
+{
+	-fx-fill: #6ae27e;
+}

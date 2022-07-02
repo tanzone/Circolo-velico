@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="246.0" prefWidth="360.0" styleClass="boatPane" stylesheets="@stylesheet.css"
+            xmlns="http://javafx.com/javafx/17" fx:controller="it.unipr.controllers.staff.BoatStaffController">
+    <children>
+        <Pane prefHeight="247.0" prefWidth="360.0">
+            <children>
+                <HBox prefHeight="153.0" prefWidth="360.0">
+                    <children>
+                        <ImageView fx:id="imgBoat" fitHeight="139.0" fitWidth="142.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@sailing.png"/>
+                            </image>
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" top="5.0"/>
+                            </HBox.margin>
+                        </ImageView>
+                        <VBox prefHeight="171.0" prefWidth="242.0">
+                            <children>
+                                <HBox prefWidth="263.0">
+                                    <children>
+                                        <Label prefHeight="30.0" prefWidth="112.0" text="User:">
+                                            <font>
+                                                <Font name="System Bold Italic" size="16.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets/>
+                                            </HBox.margin>
+                                        </Label>
+                                        <Label fx:id="username" prefHeight="39.0" prefWidth="150.0" text="member">
+                                            <font>
+                                                <Font size="16.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets/>
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox prefWidth="263.0">
+                                    <children>
+                                        <Label prefHeight="39.0" prefWidth="112.0" text="Name :">
+                                            <font>
+                                                <Font name="System Bold Italic" size="16.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets/>
+                                            </HBox.margin>
+                                        </Label>
+                                        <Label fx:id="name" prefHeight="39.0" prefWidth="150.0" text="Lunarossa">
+                                            <font>
+                                                <Font size="16.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets/>
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox prefWidth="263.0">
+                                    <children>
+                                        <Label prefHeight="39.0" prefWidth="112.0" text="Lenght :">
+                                            <font>
+                                                <Font name="System Bold Italic" size="16.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets/>
+                                            </HBox.margin>
+                                        </Label>
+                                        <Label fx:id="length" prefHeight="39.0" prefWidth="150.0" text="150 m">
+                                            <font>
+                                                <Font size="16.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets/>
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox prefWidth="263.0">
+                                    <children>
+                                        <Label prefHeight="39.0" prefWidth="112.0" text="Price :">
+                                            <font>
+                                                <Font name="System Bold Italic" size="16.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets/>
+                                            </HBox.margin>
+                                        </Label>
+                                        <Label fx:id="price" prefHeight="39.0" prefWidth="150.0" text="500 €">
+                                            <font>
+                                                <Font size="16.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets/>
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox prefWidth="263.0">
+                                    <children>
+                                        <Label prefHeight="39.0" prefWidth="112.0" text="Paid :">
+                                            <font>
+                                                <Font name="System Bold Italic" size="16.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets/>
+                                            </HBox.margin>
+                                        </Label>
+                                        <Label fx:id="paid" prefHeight="39.0" prefWidth="150.0" text="Yes"
+                                               textFill="#2fb523">
+                                            <font>
+                                                <Font name="System Bold" size="16.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets/>
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="30.0"/>
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                </HBox>
+                <VBox alignment="CENTER" layoutY="154.0">
+                    <children>
+                        <Line endX="250.0" startX="-100.0"/>
+                        <HBox prefHeight="82.0" prefWidth="360.0">
+                            <children>
+                                <VBox alignment="CENTER" prefHeight="103.0" prefWidth="259.0">
+                                    <children>
+                                        <Label alignment="CENTER" prefHeight="32.0" prefWidth="152.0"
+                                               text="Send Notification:">
+                                            <font>
+                                                <Font name="System Bold Italic" size="15.0"/>
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="10.0" right="10.0"/>
+                                            </VBox.margin>
+                                        </Label>
+                                        <Button fx:id="btnNotification" mnemonicParsing="false" onAction="#notification"
+                                                prefHeight="57.0" prefWidth="40.0" styleClass="left2">
+                                            <graphic>
+                                                <ImageView fitHeight="49.0" fitWidth="115.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@mail.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0"/>
+                                            </VBox.margin>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="TOP_CENTER" prefHeight="103.0" prefWidth="49.0"/>
+                                <VBox alignment="CENTER" prefHeight="103.0" prefWidth="259.0">
+                                    <children>
+                                        <Label alignment="CENTER" prefHeight="32.0" prefWidth="152.0" text="Delete:">
+                                            <font>
+                                                <Font name="System Bold Italic" size="15.0"/>
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="10.0" right="10.0"/>
+                                            </VBox.margin>
+                                        </Label>
+                                        <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#delete"
+                                                prefHeight="57.0" prefWidth="40.0" styleClass="left2">
+                                            <graphic>
+                                                <ImageView fitHeight="49.0" fitWidth="115.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@trash-bin.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0"/>
+                                            </VBox.margin>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

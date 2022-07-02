@@ -1,0 +1,150 @@
+.linear-gradMenu
+{
+	-fx-background-color: #393351;
+}
+
+.linear-gradBack
+{
+	-fx-background-color: #2F2B43;
+}
+
+.linear-gradTop
+{
+	-fx-background-color: #393351;
+}
+
+.btnMenu
+{
+	-fx-background-color: #393351;
+	-fx-background-radius: 30 0 0 30;
+
+}
+.btnMenu: hover
+{
+	-fx-background-color: #524A7B;
+}
+.btnMenu: pressed
+{
+	-fx-background-color: #2F2B43;
+}
+
+.btnProfile
+{
+	-fx-background-color: transparent;
+}
+
+.titleBack
+{
+	-fx-background-color: #FA2C56;
+}
+
+.btnDashBoard
+{
+	-fx-background-color: #393351;
+	-fx-background-radius: 15;
+}
+
+.circleBlue
+{
+	-fx-fill: linear-gradient(to bottom right,  #2D75E8 0%, #ffffff 98%); 
+	
+}
+
+.circleGreen
+{
+	-fx-fill: linear-gradient(to bottom right,  #006400 0%, #ffffff 98%); 
+	
+}
+
+.circleGray
+{
+	-fx-fill: linear-gradient(to bottom right,  #A9A9A9 0%, #ffffff 98%); 
+	
+}
+
+.circleOrange
+{
+	-fx-fill: linear-gradient(to bottom right,  #D2691E 0%, #ffffff 98%); 
+	
+}
+
+.accountBack
+{
+	-fx-background-color: #7b73a5;
+	-fx-background-radius: 25;
+}
+
+.btnChangeAddress
+{
+	-fx-background-color: #FA2C56;
+	-fx-background-radius: 10;
+}
+.btnChangeAddress: hover
+{
+	-fx-text-fill: #fff;
+}
+.btnChangeAddress: pressed
+{
+	-fx-text-fill: #2F2B43;
+	-fx-background-color: #fb5173;
+}
+
+.close: hover
+{
+	-fx-fill: #fdb6b4;
+}
+
+.minimaze: hover
+{
+	-fx-fill: #fdce68;
+}
+
+.maximaze: hover
+{
+	-fx-fill: #6ae27e;
+}
+
+
+.notifications
+{
+    -fx-background-color: #cccccc;
+    -fx-background-radius: 10;
+    -fx-opacity: 0.9;
+}
+
+.boatPane
+{
+    -fx-background-color: #fff;
+    -fx-background-radius: 10;
+}
+.boatPane: hover
+{
+    -fx-background-color: #FFD700;
+}
+
+.creditPane
+{
+    -fx-background-color: #fff;
+    -fx-background-radius: 10;
+    -fx-border-radius:10;
+    -fx-border-color:black;
+}
+.creditPane: hover
+{
+    -fx-background-color: #FFD700;
+}
+
+.left
+{
+	-fx-background-color: transparent;
+	-fx-background-radius: 500;
+}
+.left: hover
+{
+	-fx-background-color: #f2f2f2;
+}
+
+.deleteBoat: hover
+{
+-fx-text-fill: #ff0000;
+}

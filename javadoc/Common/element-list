@@ -1,0 +1,8 @@
+module:common
+it.unipr.accounts
+it.unipr.accounts.personalinformation
+it.unipr.boat
+it.unipr.constants
+it.unipr.race
+it.unipr.Response
+it.unipr.transaction

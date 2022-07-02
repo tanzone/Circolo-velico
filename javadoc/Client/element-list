@@ -1,0 +1,7 @@
+module:it.unipr.client
+it.unipr.connection
+it.unipr.controllers.dashboard
+it.unipr.controllers.login
+it.unipr.controllers.staff
+it.unipr.main
+it.unipr.utilities

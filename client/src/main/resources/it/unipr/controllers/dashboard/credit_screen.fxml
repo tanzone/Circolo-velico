@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" onMouseClicked="#click" prefHeight="152.0" prefWidth="360.0"
+            styleClass="creditPane" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/17"
+            fx:controller="it.unipr.controllers.dashboard.CreditController">
+    <children>
+        <Pane prefHeight="152.0" prefWidth="360.0">
+            <children>
+                <VBox prefHeight="152.0" prefWidth="360.0" stylesheets="@stylesheet.css">
+                    <children>
+                        <HBox prefHeight="84.0" prefWidth="360.0">
+                            <children>
+                                <Label fx:id="numCard" alignment="CENTER" prefHeight="71.0" prefWidth="273.0"
+                                       text="numbercard">
+                                    <font>
+                                        <Font name="System Bold Italic" size="20.0"/>
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="5.0" top="5.0"/>
+                                    </HBox.margin>
+                                </Label>
+                                <Label fx:id="cvc" alignment="CENTER" prefHeight="71.0" prefWidth="129.0" text="cvc">
+                                    <font>
+                                        <Font size="20.0"/>
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets right="5.0" top="5.0"/>
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="14.0" prefWidth="360.0">
+                            <children>
+                                <Line endX="200.0" startX="-100.0"/>
+                            </children>
+                        </HBox>
+                        <HBox alignment="BOTTOM_LEFT" prefHeight="95.0" prefWidth="360.0">
+                            <children>
+                                <Label fx:id="firstname" alignment="CENTER" prefHeight="92.0" prefWidth="104.0"
+                                       text="firstname">
+                                    <font>
+                                        <Font size="18.0"/>
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets bottom="5.0" left="5.0"/>
+                                    </HBox.margin>
+                                </Label>
+                                <Label fx:id="lastname" alignment="CENTER" prefHeight="77.0" prefWidth="93.0"
+                                       text="lastname">
+                                    <font>
+                                        <Font size="18.0"/>
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets bottom="5.0"/>
+                                    </HBox.margin>
+                                </Label>
+                                <Label fx:id="date" alignment="CENTER" prefHeight="77.0" prefWidth="102.0"
+                                       text="2001-00-00" wrapText="true">
+                                    <font>
+                                        <Font size="18.0"/>
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets bottom="5.0"/>
+                                    </HBox.margin>
+                                </Label>
+                                <ImageView fx:id="imgCredit" fitHeight="95.0" fitWidth="75.0" pickOnBounds="true"
+                                           preserveRatio="true">
+                                    <image>
+                                        <Image url="@maestro.png"/>
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets bottom="5.0" right="5.0"/>
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

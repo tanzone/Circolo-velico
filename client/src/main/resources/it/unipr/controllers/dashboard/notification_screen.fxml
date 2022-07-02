@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" prefHeight="67.0" prefWidth="329.0" styleClass="notifications"
+      stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/17"
+      fx:controller="it.unipr.controllers.dashboard.NotificationController">
+    <children>
+        <Label fx:id="message" alignment="CENTER" layoutX="8.0" layoutY="-1.0" prefHeight="67.0" prefWidth="312.0"
+               text="You have to pay some boats!" textFill="RED" wrapText="true">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+    </children>
+</Pane>

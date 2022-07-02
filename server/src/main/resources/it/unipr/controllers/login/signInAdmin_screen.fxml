@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="parentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="550.0" prefWidth="435.0" stylesheets="@stylesheet.css"
+            xmlns="http://javafx.com/javafx/17" fx:controller="it.unipr.controllers.login.SignInAdminController">
+    <children>
+        <StackPane prefHeight="550.0" prefWidth="435.0">
+            <children>
+                <Pane fx:id="paneServer" prefHeight="295.0" prefWidth="291.0" styleClass="linear-grad"
+                      stylesheets="@stylesheet.css">
+                    <children>
+                        <ImageView fitHeight="164.0" fitWidth="188.0" layoutX="126.0" layoutY="60.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@boat.png"/>
+                            </image>
+                        </ImageView>
+                        <Label layoutX="118.0" layoutY="238.0" text="Circolo Velico" textFill="WHITE">
+                            <font>
+                                <Font name="Constantia Bold" size="30.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="8.0" layoutY="525.0" text="Created by:  307720 - 308214 " textFill="WHITE">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <HBox layoutX="4.0" layoutY="8.0">
+                            <children>
+                                <Circle fill="#fc5d57" onMouseClicked="#close" radius="8.0" stroke="WHITE"
+                                        strokeType="INSIDE" styleClass="close">
+                                    <HBox.margin>
+                                        <Insets left="4.0" right="4.0"/>
+                                    </HBox.margin>
+                                </Circle>
+                                <Circle fill="#fdbb2d" radius="8.0" stroke="WHITE" strokeType="INSIDE"
+                                        styleClass="minimaze">
+                                    <HBox.margin>
+                                        <Insets left="4.0" right="4.0"/>
+                                    </HBox.margin>
+                                </Circle>
+                                <Circle fill="#27c941" radius="8.0" stroke="WHITE" strokeType="INSIDE"
+                                        styleClass="maximaze">
+                                    <HBox.margin>
+                                        <Insets left="4.0" right="4.0"/>
+                                    </HBox.margin>
+                                </Circle>
+                            </children>
+                        </HBox>
+                        <Button layoutX="118.0" layoutY="439.0" mnemonicParsing="false" onAction="#closeServer"
+                                prefHeight="39.0" prefWidth="200.0" styleClass="start" stylesheets="@stylesheet.css"
+                                text="Close">
+                            <font>
+                                <Font name="System Bold" size="18.0"/>
+                            </font>
+                        </Button>
+                        <Label layoutX="83.0" layoutY="319.0" prefHeight="30.0" prefWidth="138.0" text="Ip Address:"
+                               textFill="WHITE">
+                            <font>
+                                <Font size="20.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="83.0" layoutY="359.0" prefHeight="30.0" prefWidth="138.0" text="Port: "
+                               textFill="WHITE">
+                            <font>
+                                <Font size="20.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="nPort" layoutX="243.0" layoutY="359.0" prefHeight="30.0" prefWidth="186.0"
+                               text="4444" textFill="WHITE">
+                            <font>
+                                <Font size="20.0"/>
+                            </font>
+                            <padding>
+                                <Insets right="10.0"/>
+                            </padding>
+                        </Label>
+                        <Label fx:id="ipAddress" layoutX="244.0" layoutY="319.0" prefHeight="30.0" prefWidth="186.0"
+                               text="localhost" textFill="WHITE">
+                            <font>
+                                <Font size="20.0"/>
+                            </font>
+                            <padding>
+                                <Insets right="10.0"/>
+                            </padding>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane fx:id="paneLogin" prefHeight="295.0" prefWidth="291.0" styleClass="linear-grad"
+                      stylesheets="@stylesheet.css">
+                    <children>
+                        <ImageView fitHeight="164.0" fitWidth="188.0" layoutX="126.0" layoutY="60.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@boat.png"/>
+                            </image>
+                        </ImageView>
+                        <Label layoutX="118.0" layoutY="238.0" text="Circolo Velico" textFill="WHITE">
+                            <font>
+                                <Font name="Constantia Bold" size="30.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="8.0" layoutY="525.0" text="Created by:  307720 - 308214 " textFill="WHITE">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <HBox layoutX="4.0" layoutY="8.0">
+                            <children>
+                                <Circle fill="#fc5d57" onMouseClicked="#close" radius="8.0" stroke="WHITE"
+                                        strokeType="INSIDE" styleClass="close">
+                                    <HBox.margin>
+                                        <Insets left="4.0" right="4.0"/>
+                                    </HBox.margin>
+                                </Circle>
+                                <Circle fill="#fdbb2d" radius="8.0" stroke="WHITE" strokeType="INSIDE"
+                                        styleClass="minimaze">
+                                    <HBox.margin>
+                                        <Insets left="4.0" right="4.0"/>
+                                    </HBox.margin>
+                                </Circle>
+                                <Circle fill="#27c941" radius="8.0" stroke="WHITE" strokeType="INSIDE"
+                                        styleClass="maximaze">
+                                    <HBox.margin>
+                                        <Insets left="4.0" right="4.0"/>
+                                    </HBox.margin>
+                                </Circle>
+                            </children>
+                        </HBox>
+                        <TextField fx:id="username" layoutX="118.0" layoutY="335.0" prefHeight="20.0" prefWidth="200.0"
+                                   promptText="Admin username" text="admin">
+                            <font>
+                                <Font size="15.0"/>
+                            </font>
+                        </TextField>
+                        <PasswordField fx:id="password" layoutX="118.0" layoutY="382.0" prefHeight="30.0"
+                                       prefWidth="200.0" promptText="Admin password" text="admin"/>
+                        <Button layoutX="118.0" layoutY="439.0" mnemonicParsing="false" onAction="#start"
+                                prefHeight="39.0" prefWidth="200.0" styleClass="start" stylesheets="@stylesheet.css"
+                                text="Start">
+                            <font>
+                                <Font name="System Bold" size="18.0"/>
+                            </font>
+                        </Button>
+                        <Label fx:id="error" alignment="CENTER" contentDisplay="CENTER" layoutX="119.0" layoutY="302.0"
+                               prefHeight="25.0" prefWidth="199.0" text="Errors on login!" textFill="RED">
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>

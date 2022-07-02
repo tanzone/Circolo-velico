@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="parentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" stylesheets="@stylesheet.css"
+            xmlns="http://javafx.com/javafx/17" fx:controller="it.unipr.controllers.login.SignInUpController">
+    <children>
+        <BorderPane prefHeight="550.0" prefWidth="900.0">
+            <left>
+                <Pane prefHeight="550.0" prefWidth="435.0" styleClass="linear-grad" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="164.0" fitWidth="188.0" layoutX="126.0" layoutY="152.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@boat.png"/>
+                            </image>
+                        </ImageView>
+                        <Label layoutX="118.0" layoutY="352.0" text="Circolo Velico" textFill="WHITE">
+                            <font>
+                                <Font name="Constantia Bold" size="30.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="516.0" text="Created by:  307720 - 308214 " textFill="WHITE">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <HBox layoutX="4.0" layoutY="8.0">
+                            <children>
+                                <Circle fill="#fc5d57" onMouseClicked="#close" radius="8.0" stroke="WHITE"
+                                        strokeType="INSIDE" styleClass="close">
+                                    <HBox.margin>
+                                        <Insets left="4.0" right="4.0"/>
+                                    </HBox.margin>
+                                </Circle>
+                                <Circle fill="#fdbb2d" radius="8.0" stroke="WHITE" strokeType="INSIDE"
+                                        styleClass="minimaze">
+                                    <HBox.margin>
+                                        <Insets left="4.0" right="4.0"/>
+                                    </HBox.margin>
+                                </Circle>
+                                <Circle fill="#27c941" radius="8.0" stroke="WHITE" strokeType="INSIDE"
+                                        styleClass="maximaze">
+                                    <HBox.margin>
+                                        <Insets left="4.0" right="4.0"/>
+                                    </HBox.margin>
+                                </Circle>
+                            </children>
+                        </HBox>
+                        <TextField fx:id="ipField" layoutX="117.0" layoutY="400.0" prefHeight="20.0" prefWidth="201.0"
+                                   promptText="Ip address">
+                            <font>
+                                <Font size="15.0"/>
+                            </font>
+                        </TextField>
+                    </children>
+                </Pane>
+            </left>
+            <center>
+                <StackPane prefHeight="150.0" prefWidth="490.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane fx:id="paneSignUp" prefHeight="200.0" prefWidth="200.0"
+                              style="-fx-background-color: #fff;">
+                            <children>
+                                <Button layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#back"
+                                        prefHeight="53.0" prefWidth="48.0" styleClass="left">
+                                    <graphic>
+                                        <ImageView fitHeight="48.0" fitWidth="36.0" pickOnBounds="true"
+                                                   preserveRatio="true">
+                                            <image>
+                                                <Image url="@left.png"/>
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Label layoutX="40.0" layoutY="72.0" text="Sign Up :">
+                                    <font>
+                                        <Font name="System Bold" size="26.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="nameField" layoutX="88.0" layoutY="145.0" prefHeight="42.0"
+                                           prefWidth="135.0" promptText="Nome">
+                                    <font>
+                                        <Font size="18.0"/>
+                                    </font>
+                                </TextField>
+                                <TextField fx:id="lastNameField" layoutX="243.0" layoutY="145.0" prefHeight="42.0"
+                                           prefWidth="135.0" promptText="Cognome">
+                                    <font>
+                                        <Font size="18.0"/>
+                                    </font>
+                                </TextField>
+                                <TextField fx:id="fiscalCodeField" layoutX="88.0" layoutY="205.0" prefHeight="42.0"
+                                           prefWidth="290.0" promptText="Codice Fiscale">
+                                    <font>
+                                        <Font size="18.0"/>
+                                    </font>
+                                </TextField>
+                                <TextField fx:id="usernameSignUpField" layoutX="88.0" layoutY="289.0" prefHeight="42.0"
+                                           prefWidth="290.0" promptText="Username">
+                                    <font>
+                                        <Font size="18.0"/>
+                                    </font>
+                                </TextField>
+                                <PasswordField fx:id="passwordSignUpField" layoutX="88.0" layoutY="347.0"
+                                               prefHeight="42.0" prefWidth="290.0" promptText="Password">
+                                    <font>
+                                        <Font size="18.0"/>
+                                    </font>
+                                </PasswordField>
+                                <PasswordField fx:id="password2SignUpField" layoutX="88.0" layoutY="404.0"
+                                               prefHeight="42.0" prefWidth="290.0" promptText="Password Again">
+                                    <font>
+                                        <Font size="18.0"/>
+                                    </font>
+                                </PasswordField>
+                                <Button fx:id="signUpButton" layoutX="177.0" layoutY="496.0" mnemonicParsing="false"
+                                        onAction="#signUp" prefHeight="40.0" prefWidth="111.0" styleClass="signIn"
+                                        text="Sign Up">
+                                    <font>
+                                        <Font size="18.0"/>
+                                    </font>
+                                </Button>
+                                <Label fx:id="signUpPassError" layoutX="89.0" layoutY="451.0"
+                                       text="Passwords are not the same!" textFill="RED">
+                                    <font>
+                                        <Font size="14.0"/>
+                                    </font>
+                                </Label>
+                                <Label fx:id="signUpUserError" layoutX="89.0" layoutY="265.0"
+                                       text="Username or Fiscal Code already exists!" textFill="RED">
+                                    <font>
+                                        <Font size="14.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="paneSignIn" prefHeight="200.0" prefWidth="200.0"
+                              style="-fx-background-color: #fff;">
+                            <children>
+                                <TextField fx:id="usernameField" layoutX="96.0" layoutY="215.0" prefHeight="42.0"
+                                           prefWidth="290.0" promptText="Username">
+                                    <font>
+                                        <Font size="18.0"/>
+                                    </font>
+                                </TextField>
+                                <PasswordField fx:id="passwordField" layoutX="96.0" layoutY="295.0" prefHeight="42.0"
+                                               prefWidth="290.0" promptText="Password">
+                                    <font>
+                                        <Font size="18.0"/>
+                                    </font>
+                                </PasswordField>
+                                <Button fx:id="signInButton" layoutX="275.0" layoutY="358.0" mnemonicParsing="false"
+                                        onAction="#signIn" prefHeight="40.0" prefWidth="111.0" styleClass="signIn"
+                                        text="Sign In">
+                                    <font>
+                                        <Font size="18.0"/>
+                                    </font>
+                                </Button>
+                                <Button layoutX="117.0" layoutY="487.0" mnemonicParsing="false"
+                                        onAction="#changePaneReg" prefHeight="49.0" prefWidth="256.0"
+                                        styleClass="signUp" text="Don't have an account? Sign Up">
+                                    <font>
+                                        <Font size="16.0"/>
+                                    </font>
+                                </Button>
+                                <Label layoutX="96.0" layoutY="93.0" text="Sign In :">
+                                    <font>
+                                        <Font name="System Bold" size="26.0"/>
+                                    </font>
+                                </Label>
+                                <Label layoutX="96.0" layoutY="353.0" text="Forgot Password?" textFill="#371897">
+                                    <font>
+                                        <Font size="14.0"/>
+                                    </font>
+                                </Label>
+                                <Label fx:id="loginError" layoutX="96.0" layoutY="151.0" prefHeight="64.0"
+                                       prefWidth="205.0" text="Something went wrong!  Invalid Username or Password"
+                                       textFill="RED" wrapText="true">
+                                    <font>
+                                        <Font size="15.0"/>
+                                    </font>
+                                </Label>
+                                <RadioButton fx:id="userTypeButton" layoutX="222.0" layoutY="102.0"
+                                             mnemonicParsing="false" onMouseClicked="#buttonClicked" prefHeight="20.0"
+                                             prefWidth="77.0" selected="true" text="User">
+                                    <font>
+                                        <Font name="System Bold Italic" size="14.0"/>
+                                    </font>
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="typeLogin"/>
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="staffTypeButton" layoutX="312.0" layoutY="100.0"
+                                             mnemonicParsing="false" onMouseClicked="#buttonClicked" prefHeight="25.0"
+                                             prefWidth="84.0" text="Staff" toggleGroup="$typeLogin">
+                                    <font>
+                                        <Font name="System Bold Italic" size="14.0"/>
+                                    </font>
+                                </RadioButton>
+                            </children>
+                        </Pane>
+                    </children>
+                </StackPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
